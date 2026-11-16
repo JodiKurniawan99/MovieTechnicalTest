@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
                             val viewModel: GenresViewModel = hiltViewModel()
                             GenresScreen(
                                 viewModel = viewModel,
-                                onGenFreClick = { genreId, genreName ->
+                                onGenreClick = { genreId, genreName ->
                                     navController.navigate("movies/$genreId/$genreName")
                                 }
                             )
